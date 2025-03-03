@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237556}
   - component: {fileID: 237555}
+  - component: {fileID: 237557}
   m_Layer: 0
   m_Name: HolyWheat
   m_TagString: HolyWheat
@@ -173,6 +174,21 @@ Transform:
   - {fileID: 130424526}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &237557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b231b388ac1c62141a25e80c72f3913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 0}
+  _forceIncrease: 0
+  _resetBoostDuration: 0
 --- !u!1 &41605111
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457285188}
   - component: {fileID: 457285187}
+  - component: {fileID: 457285189}
   m_Layer: 0
   m_Name: RottenWheat
   m_TagString: RottenWheat
@@ -941,6 +958,21 @@ Transform:
   - {fileID: 1448596756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457285189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457285186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122411608c5960d46bc6a180c959d373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 0}
+  _movementDecreaseSpeed: 0
+  _resetBoostDuration: 0
 --- !u!1 &505937316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143486447}
   - component: {fileID: 1143486446}
+  - component: {fileID: 1143486448}
   m_Layer: 0
   m_Name: GoldWheat
   m_TagString: GoldWheat
@@ -1492,6 +1525,21 @@ Transform:
   - {fileID: 4134725601916810328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1143486448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143486445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2162f5e552cbaf4e843403c74591276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 1294073256}
+  _movementIncreaseSpeed: 15
+  _resetBoostDuration: 5
 --- !u!1 &1294073252
 GameObject:
   m_ObjectHideFlags: 0
