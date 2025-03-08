@@ -23,7 +23,7 @@ public class CatController : MonoBehaviour
     private CatStateController _catStateController;
     private float _timer;
     private bool _isWaiting;
-    private bool _isChasing;
+    private bool _isChasing = true;
     private Vector3 _initalPosition;
 
     private void Awake()
@@ -35,6 +35,7 @@ public class CatController : MonoBehaviour
     private void Start()
     {
         _initalPosition = transform.position;
+        SetRandomDestination();
     }
     private void Update()
     {
@@ -96,7 +97,7 @@ public class CatController : MonoBehaviour
 
         while (attempts < _maxDestinationAttempts && !destionationSet)
         {
-            Vector3 randomDirection = UnityEngine.Random.insideUnitCircle * _patrolRadius;
+            Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * _patrolRadius;
             randomDirection += _initalPosition;
 
             if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, _patrolRadius, NavMesh.AllAreas))

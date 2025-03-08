@@ -1,5 +1,3 @@
-
-
 public enum CatState
 {
     Idle,

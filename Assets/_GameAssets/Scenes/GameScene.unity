@@ -3810,6 +3810,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 14bb2f35e4ed7a844a891d9a8a560a0f, type: 2}
+    - target: {fileID: 5812855996981238297, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5931138927592689808, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -7282,7 +7286,7 @@ MonoBehaviour:
   _playerHeight: 1
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   _groundDrag: 5
   _slideKey: 113
   _slideMultiplier: 1.2
@@ -11936,11 +11940,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f70fd1f20532034b84b53e6e47eca81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerController: {fileID: 1294073256}
+  _playerTransform: {fileID: 1294073253}
   _defaultSpeed: 5
   _chaseSpeed: 7
   _waitTime: 6.75
   _patrolRadius: 28
   _maxDestinationAttempts: 50
+  _chaseDistanceThreshold: 2.25
+  _chaseDistance: 2.75
 --- !u!114 &2134623043
 MonoBehaviour:
   m_ObjectHideFlags: 0
